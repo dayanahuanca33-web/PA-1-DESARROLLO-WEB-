@@ -1,0 +1,205 @@
+/* Fondo de la pagina */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("imagenes/fondo.jpg");
+    background-repeat: repeat;
+    padding-bottom: 30px;
+}
+
+/* El encabezado (Logo y titulo) */
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%; 
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.3); 
+}
+
+.titulo-contenedor h1 {
+    color: #00adf1;
+    font-size: 32px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3); 
+    background-color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+/* Linea separadora */
+hr, .linea-gris {
+    border: 1px solid #666; 
+    margin: 10px 20px;
+}
+
+/* Nombre del desarrollador */
+.autor-contenedor {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 20px 10px;
+}
+
+.autor {
+    font-size: 14px;
+    background-color: white;
+    display: inline-block;
+    padding: 2px 8px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Subtitulos */
+.subtitulo,
+.subtitulo-analogia,
+.subtitulo-definiciones,
+.resumen-subtitulo {
+    text-align: left;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 15px 20px;
+}
+
+.subtitulo { font-size: 22px; }
+.subtitulo-analogia { font-size: 20px; margin-top: 30px; }
+.subtitulo-definiciones { font-size: 22px; }
+.resumen-subtitulo { font-size: 22px; }
+
+/* Parrafo principal*/
+.parrafo-principal {
+    text-align: left;
+    font-size: 16px;
+    margin: 0 20px 20px;
+    line-height: 1.6;
+    max-width: 900px;
+}
+
+/* Marco negro para las tarjetas*/
+.marco {
+    border: 2px solid black; 
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 850px;
+}
+
+.marco.analogia-marco {
+    padding: 10px;
+    margin: 15px auto;
+}
+
+/* Contenedor de las tarjetas */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 15px;
+    margin: 0 auto;
+    max-width: 850px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background: white;
+    border: 2px solid #ccc;
+    padding: 12px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 0; 
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2); 
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: white;
+    padding: 6px 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Primer contenedor de las tarjetas */
+.primer-contenedor .contenedor {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+/* Segundo contenedor de las tarjetas */
+.contenedor.analogia {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    flex-wrap: nowrap; 
+    overflow-x: auto;
+}
+
+.contenedor.analogia .tarjeta {
+    padding: 12px 15px 15px;
+    width: 280px;
+    min-height: 350px;
+}
+
+/* Colores de los titulos de las tarjetas */
+.tarjeta.html h3 { 
+    background-color: #e34c26; }
+.tarjeta.css h3  { 
+    background-color: #2965f1; }
+.tarjeta.js h3   { 
+    background-color: #3cba54; }
+
+/* Imagenes de las tarjetas */
+.imagen-tarjeta {
+    width: 100px;
+    margin: 10px auto 0;
+    display: block;
+}
+
+/* Resaltador amarillo de las tarjetas */
+.amarillo {
+    background-color: yellow;
+}
+
+/* Texto en cursiva */
+em {
+    font-style: italic;
+}
+
+/* Imagen final de las casas */
+.imagen-final {
+    text-align: center;
+    margin: 20px 0 20px;
+}
+
+.imagen-final .casa2 {
+    width: 300px;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.3); 
+    border-radius: 6px; 
+}
+
+/* Cuadro del resumen */
+.cuadro-resumen {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 40px;
+    text-align: center;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.2); 
+    border-radius: 8px; 
+}
+
+.cuadro-resumen p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    font-style: italic;
+}
