@@ -203,3 +203,7 @@ em {
     line-height: 1.6;
     font-style: italic;
 }
+.marco .tarjeta {
+    box-shadow: none;
+}
+
